@@ -16,4 +16,4 @@ Manifests:
       Script: python3 {artifacts:path}/hello_greengrass.py '{configuration:/Message}'
       #RequiresPrivilege: True
   Artifacts:
-  - Uri: s3://gg-component-artifacts-854769417951-us-west-2/artifacts/com.loupe.HelloGreengrass/1.0.0/hello_greengrass.py
+  - Uri: <url_of_your_resource_bucket>
