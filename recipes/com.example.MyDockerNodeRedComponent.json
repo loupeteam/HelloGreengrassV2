@@ -1,0 +1,25 @@
+{
+    "RecipeFormatVersion": "2020-01-25",
+    "ComponentName": "com.example.MyDockerNodeRedComponent",
+    "ComponentVersion": "0.0.1",
+    "ComponentType": "aws.greengrass.generic",
+    "ComponentDescription": "A component that runs NodeRED in a Docker container.",
+    "ComponentPublisher": "Loupe",
+    "Manifests": [
+      {
+        "Platform": {
+          "os": "linux"
+        },
+        "Lifecycle": {
+          "Install": {
+            "Script": "docker volume create nodereddata && docker pull nodered/node-red"
+          },
+          "Run": {
+            "Script": "docker run --rm --network=host -v nodereddata:/data --name ggc_nodered nodered/node-red"
+          }
+        },
+        "Artifacts": []
+      }
+    ],
+    "Lifecycle": {}
+  }
