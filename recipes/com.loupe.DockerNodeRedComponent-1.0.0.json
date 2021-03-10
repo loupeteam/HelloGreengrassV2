@@ -1,6 +1,6 @@
 {
     "RecipeFormatVersion": "2020-01-25",
-    "ComponentName": "com.example.MyDockerNodeRedComponent",
+    "ComponentName": "com.example.DockerNodeRedComponent",
     "ComponentVersion": "1.0.0",
     "ComponentType": "aws.greengrass.generic",
     "ComponentDescription": "A component that runs NodeRED in a Docker container.",
