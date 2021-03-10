@@ -1,0 +1,19 @@
+---
+RecipeFormatVersion: '2020-01-25'
+ComponentName: com.loupe.HelloGreengrass
+ComponentVersion: 1.0.0
+ComponentDescription: AWS IoT Greengrass component to test deployments
+ComponentPublisher: Jesse Cox
+ComponentConfiguration:
+  DefaultConfiguration:
+    Message: Hello
+Manifests:
+- Name: Linux
+  Platform:
+    os: linux
+  Lifecycle:
+    Run:
+      Script: python3 {artifacts:path}/hello_greengrass.py '{configuration:/Message}'
+      #RequiresPrivilege: True
+  Artifacts:
+  - Uri: s3://gg-component-artifacts-854769417951-us-west-2/artifacts/com.loupe.HelloGreengrass/1.0.0/hello_greengrass.py
