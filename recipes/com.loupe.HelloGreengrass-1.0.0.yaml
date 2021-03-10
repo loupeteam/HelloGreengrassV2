@@ -16,4 +16,4 @@ Manifests:
       Script: python3 {artifacts:path}/hello_greengrass.py '{configuration:/Message}'
       #RequiresPrivilege: True
   Artifacts:
-  - Uri: <url_of_your_resource_bucket>
+  - Uri: s3://<path_of_your_artifact_bucket>
