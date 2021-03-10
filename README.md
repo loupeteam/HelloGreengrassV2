@@ -8,6 +8,9 @@ Follow these instructions to install and run AWS Greengrass Core on Debian 10.  
 ## Installation
 
 Open an ssh session with the IPC
+```
+ssh <user>@<ip_address_of_device>
+```
 
 Update and upgrade (because you always do this):
 ```
